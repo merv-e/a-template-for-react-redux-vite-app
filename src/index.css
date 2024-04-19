@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.counter-visible {
+    display: block;
+    visibility: visible;
+}
+
+.counter-invisible {
+    visibility: hidden;
+}
+
+.counter-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 50px;
+}
+
+.btn-container {
+    background-color: #0e0e5aa0;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+}
+
+.counter-value {
+    font-size: large;
+    font-weight: 600;
+}
+

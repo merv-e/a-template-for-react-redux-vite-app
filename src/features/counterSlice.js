@@ -4,7 +4,7 @@ const counterSlice = createSlice({
     name: "counter",
     initialState: {
         value: 0,
-        showToggle : false 
+        isCounterShown : true 
     },
     reducers : {
         increment : (state) => {
@@ -14,10 +14,10 @@ const counterSlice = createSlice({
             state.value -= 1
         },
         toggle : (state) => {
-            state.showToggle = !state.showToggle
+            state.isCounterShown = !state.isCounterShown
         },
         increaseBy10 : (state, action) => {
-            state.value -= action.payload
+            state.value += action.payload
         },
     }
 });

@@ -1,36 +1,73 @@
 body {
   margin: 0;
   text-align: center;
+  padding: 10px;
 }
 
-.counter-visible {
-    display: block;
-    visibility: visible;
-}
-
-.counter-invisible {
-    visibility: hidden;
-}
-
-.counter-btn-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0 50px;
-}
-
-.btn-container {
-    background-color: #0e0e5aa0;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    font-size: large;
-    border: none;
-    border-radius: 10px;
+h1 {
+  padding: 50px 0;
 }
 
 .counter-value {
-    font-size: large;
-    font-weight: 600;
+  font-size: large;
+  font-weight: 600;
 }
 
+.counter-visible {
+  display: block;
+  visibility: visible;
+}
+
+.counter-invisible {
+  visibility: hidden;
+}
+
+.counter-btn-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.counter-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  gap: 1rem;
+}
+
+.counter .btn {
+  background-color: #0e0e5aa0;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+}
+
+.counter .disabled-btn {
+  background-color: #f30808f7;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  cursor: not-allowed;
+}
+
+.counter input {
+  background-color: #0e0e5a25;
+  padding: 0.5rem 1rem;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  max-width: 50px;
+  min-width: 20px;
+}
+
+.counter label{
+  font-size: large;
+  font-weight: 700;
+}
